@@ -1,0 +1,161 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500);
+
+header{
+	box-shadow: 0 3px 3px -3px #9E9E9E;
+	height: 30px;
+	margin: 10px 0;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: flex-end;
+}
+header > div{
+	
+}
+.title{
+	padding: 0 10px;
+	font-size: 1.3rem;
+	font-weight: 700;
+	color: #040492;
+}
+.author{
+	font-size: 1.2rem;
+	color: #9F9FA2;
+}
+.graph-wrapper{
+	position: relative;
+	top: 0;
+	left: 0;
+	min-width: 320px;
+	font-family: 'Roboto', sans-serif;
+}
+.graph-item{
+	width: 100%;
+	/* max-width: 320px; */
+	display: inline-flex;
+	flex-flow: row wrap;
+	box-shadow: 0 3px 3px -3px #9E9E9E;
+	padding-bottom: 15px;
+}
+.graph-container{
+	position: relative;
+	top: 20px;
+	height: 200px;
+	min-width: 200px;
+	width: 100%;
+	flex: 1 100%;
+}
+.graph-info{
+	/* max-width: 160px; */
+	flex: 1 40%;
+	justify-content: center;
+	word-break: break-all;
+	padding: 0 5%;
+	/* padding: 0 15px; */
+}
+.graph-info:nth-of-type(2){
+	text-align: right;
+}
+
+.graph-info-title{
+	/* flex: 1 1 auto; */
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 100%;
+	padding: 10px 0 4px 0;
+	font-weight: bold;
+}
+.graph-info-percentatge{
+	display: inline-block;
+	text-align: left;
+	font-size: 1.1rem;
+	padding-right: 6px;
+}
+.graph-info-value{
+	display: inline-block;
+	font-size: 1rem;
+	color: #C1C1C1;
+	word-break: break-all;
+}
+
+.graph-title{
+	fill: #C0C0C0;
+	text-transform: uppercase;
+	font-size: 140%;
+}
+
+.graph-description{
+	fill: #232323;
+	font-size: 200%;
+}
+.graph-area{
+	fill-opacity: .4;
+	stroke-width: 1.3;
+}
+/* __ Gallery __*/
+.gallery{
+	
+}
+.gallery-container{
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	overflow: hidden;
+	/* width: 400%; */
+}
+.gallery-content{
+	position: relative;
+	top: 0;
+	left: 0px;
+	overflow-x: auto;
+	white-space: nowrap;
+	width: 100%;
+	box-shadow: 0 3px 3px -3px #9E9E9E;
+}
+.gallery-item{
+	/* max-width: 320px; */
+	display: inline-block;
+	width: 100%;
+}
+/* __ Navigation __*/
+.gallery-nav{
+	margin-top: 20px;
+	height: 30px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+.gallery-nav-dot{
+    content: " ";
+    width: 24px;
+    height: 24px;
+    background-color: #C0C0C0;
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg%20fill%3D%22%23000000%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M12%202C6.47%202%202%206.47%202%2012s4.47%2010%2010%2010%2010-4.47%2010-10S17.53%202%2012%202zm0%2018c-4.41%200-8-3.59-8-8s3.59-8%208-8%208%203.59%208%208-3.59%208-8%208z%22%2F%3E%0A%3C%2Fsvg%3E");
+    mask-image: url("data:image/svg+xml,%3Csvg%20fill%3D%22%23000000%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M12%202C6.47%202%202%206.47%202%2012s4.47%2010%2010%2010%2010-4.47%2010-10S17.53%202%2012%202zm0%2018c-4.41%200-8-3.59-8-8s3.59-8%208-8%208%203.59%208%208-3.59%208-8%208z%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+.gallery-nav-dot.active{
+	-webkit-mask-image: url("data:image/svg+xml,%3Csvg%20fill%3D%22%23000000%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M12%202C6.48%202%202%206.48%202%2012s4.48%2010%2010%2010%2010-4.48%2010-10S17.52%202%2012%202z%22%2F%3E%0A%3C%2Fsvg%3E");
+    mask-image: url("data:image/svg+xml,%3Csvg%20fill%3D%22%23000000%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M12%202C6.48%202%202%206.48%202%2012s4.48%2010%2010%2010%2010-4.48%2010-10S17.52%202%2012%202z%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+/* === Desktop === */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+  /* hide navigation in desktop*/
+  .gallery-nav{
+  	display: none;
+  }
+  header {
+    justify-content: flex-start;
+}
+  .gallery-content{
+  
+	display: flex;
+  }
+  .gallery-item{
+	max-width: 320px;
+	flex-grow: 1;
+	flex-basis: 50%;
+	}
+}
