@@ -99,7 +99,7 @@ define(['d3',
 		.append("clipPath")
         .attr('id', 'circleMask')
         .append("circle")
-        .attr("cx", pieChartTransform.translate[0] - pieMaskedRadius)
+        .attr("cx", pieMaskedRadius)
         .attr("cy", pieChartTransform.translate[1] - pieMaskedRadius)
         .attr("r", pieMaskedRadius);
 		
